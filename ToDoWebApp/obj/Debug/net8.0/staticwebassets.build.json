@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bVh0Pf8LE7O8nhXBIJwrLR58yzjbNDqukvju67+IgVs=",
+  "Hash": "1x6aSKaaG6RvnbebHoedntt9wWEh9RnaZjn4AGKD89o=",
   "Source": "ToDoWebApp",
   "BasePath": "_content/ToDoWebApp",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ToDoWebApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\wwwroot\\css\\custom.css",
+      "SourceId": "ToDoWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\wwwroot\\",
+      "BasePath": "_content/ToDoWebApp",
+      "RelativePath": "css/custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\custom.css"
     },
     {
       "Identity": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\wwwroot\\css\\site.css",
