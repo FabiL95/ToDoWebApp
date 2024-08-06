@@ -80,6 +80,10 @@ namespace ToDoWebApp.Controllers
         // GET: ToDoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            // Fetch the list of ToDo items
+            var toDoList = _context.ToDos.ToList();
+            ViewData["ToDoList"] = toDoList;
+
             if (id == null)
             {
                 return NotFound();
@@ -130,7 +134,8 @@ namespace ToDoWebApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", toDo.UserId);
+            // Fetch the list of ToDo items again in case of validation error
+            ViewData["ToDoList"] = _context.ToDos.ToList();
             return View(toDo);
         }
 
@@ -154,6 +159,9 @@ namespace ToDoWebApp.Controllers
                 return NotFound();
             }
 
+            // Fetch the list of ToDo items
+            var toDoList = _context.ToDos.ToList();
+            ViewData["ToDoList"] = toDoList;
             return View(toDo);
         }
 

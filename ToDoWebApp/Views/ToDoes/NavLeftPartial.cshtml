@@ -2,7 +2,7 @@
 @using Microsoft.AspNetCore.Identity;
 @inject UserManager<IdentityUser> userManager;
 
-<div class="container-fluid d-flex flex-column" style="width: 20vw; height: 80vh; background-color: lightblue">
+<div class="container-fluid d-flex flex-column" style="width: 10vw; height: 80vh; background-color: lightblue">
     <a class="btn btn-info d-flex justify-content-center align-items-center mb-2" asp-action="Create" asp-controller="ToDoes" style="width: 7vw; height: 3vh; font-size: 16px">Create new</a>
     <div style="width: 100%; height: 45%; background-color: lightgoldenrodyellow">
         <h3>Active ToDo's</h3>
@@ -14,7 +14,7 @@
                     if (item.IsDone == false)
                     {
                         <li>
-                            <a style="text-decoration: none">@item.Title</a>
+                            <a asp-action="Edit" asp-controller="ToDoes" asp-route-id="@item.Id" style="text-decoration: none">@item.Title</a>
                         </li>
                     }
                 }
@@ -36,7 +36,7 @@
                     if (item.IsDone == true)
                     {
                         <li>
-                            <a style="text-decoration: none">@item.Title</a>
+                            <a asp-action="Edit" asp-controller="ToDoes" asp-route-id="@item.Id" style="text-decoration: none">@item.Title</a>
                         </li>
                     }
                 }

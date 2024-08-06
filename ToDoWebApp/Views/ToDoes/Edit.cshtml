@@ -2,12 +2,17 @@
 
 @{
     ViewData["Title"] = "Edit";
+    var toDoList = ViewData["ToDoList"] as IEnumerable<ToDoWebApp.Models.ToDo>;
 }
 
-<h1>Edit</h1>
 
-<h4>ToDo</h4>
-<hr />
+
+<div class="d-flex">
+    <div>
+        <partial name="NavLeftPartial" model="toDoList" />
+    </div>
+    <div class="flex-grow-1 ms-4" style="width: 80vw; height: 80vh; background-color: lightcoral">
+        <h4>Edit</h4>
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -23,25 +28,30 @@
                 <input asp-for="Content" class="form-control" />
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            @*<div class="form-group">
                 <label asp-for="CreationDate" class="control-label"></label>
                 <input asp-for="CreationDate" class="form-control" />
                 <span asp-validation-for="CreationDate" class="text-danger"></span>
             </div>
+            *@
             <div class="form-group">
-                <label asp-for="IsDone" class="control-label"></label>
-                <input asp-for="IsDone" class="form-control" />
+                
+                <input type="hidden" asp-for="IsDone" class="form-control" />
                 <span asp-validation-for="IsDone" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                
+                <input type="hidden" asp-for="UserId" class="form-control" />
                 <span asp-validation-for="UserId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary mt-3" />
+                        <a class="btn btn-info mt-3" asp-action="Index">Back to List</a>
+                        <a class="btn btn-danger mt-3" asp-action="Delete" asp-controller="ToDoes" asp-route-id="@Model.Id">Delete</a>
             </div>
         </form>
+    </div>
+</div>
     </div>
 </div>
 
