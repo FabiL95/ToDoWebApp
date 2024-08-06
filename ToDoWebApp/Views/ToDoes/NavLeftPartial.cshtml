@@ -2,22 +2,22 @@
 @using Microsoft.AspNetCore.Identity;
 @inject UserManager<IdentityUser> userManager;
 
-<div class="container-fluid d-flex flex-column" style="width: 10vw; height: 80vh; background-color: rgba(34, 40, 49); border: 2px solid rgba(118, 171, 174); border-radius: 15px">
+<div class="container-fluid d-flex flex-column" style="width: 15vw; height: 80vh; background-color: rgba(34, 40, 49); border: 2px solid rgba(118, 171, 174); border-radius: 15px">
     <a class="btn btn-info d-flex justify-content-center align-items-center mb-2 mt-2" asp-action="Create" asp-controller="ToDoes" style="width: 100%; height: 10%; font-size: 18px; font-weight: 500">Create new</a>
     <hr style="color: rgba(118, 171, 174)" />
     <h3 style="color: white; font-size: 18px; font-weight: 700">Active ToDo's</h3>
     <div style="width: 100%; height: 40%; background-color: rgba(34, 40, 49); overflow-y: auto">
         
-        <ul>
+        
             @if (Model != null && Model.Any())
             {
                 @foreach (var item in Model)
                 {
                     if (item.IsDone == false)
                     {
-                        <li style="list-style: none">
+                        <div>
                             <a asp-action="Edit" asp-controller="ToDoes" asp-route-id="@item.Id" style="text-decoration: none; font-size: 14px; color: white; font-weight: 100">🟢 @item.Title</a>
-                        </li>
+                        </div>
                     }
                 }
             }
@@ -25,21 +25,21 @@
             {
                 <li>No active ToDo's</li>
             }
-        </ul>
+        
     </div>
     <hr style="color: rgba(118, 171, 174)" />
     <h3 style="color: white; font-size: 18px; font-weight: 700">Finished ToDo's</h3>
     <div style="width: 100%; height: 40%; background-color: rgba(34, 40, 49); overflow-y: auto">
-        <ul>
+        
             @if (Model != null && Model.Any())
             {
                 @foreach (var item in Model)
                 {
                     if (item.IsDone == true)
                     {
-                        <li style="list-style: none">
+                        <div>
                             <a asp-action="Edit" asp-controller="ToDoes" asp-route-id="@item.Id" style="text-decoration: none; font-size: 14px; color: white; font-weight: 100">✔ @item.Title</a>
-                        </li>
+                        </div>
                     }
                 }
             }
@@ -47,6 +47,6 @@
             {
                 <li>No finished ToDo's</li>
             }
-        </ul>
+        
     </div>
 </div>
