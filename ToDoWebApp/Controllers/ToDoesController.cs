@@ -52,8 +52,8 @@ namespace ToDoWebApp.Controllers
         public IActionResult Create()
         {
             // Fetch the list of ToDo items
-            var toDoList = _context.ToDos.ToList();
-            ViewData["ToDoList"] = toDoList;
+           var toDoList = _context.ToDos.ToList();
+           ViewData["ToDoList"] = toDoList;
             return View();
         }
 

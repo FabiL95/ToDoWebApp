@@ -15,8 +15,14 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  min-width: 100%;
+  background-color: burlywood;
 }
 
 body {
   margin-bottom: 60px;
+  min-width: 100vw !important;
+  
+  padding: 0 !important;
 }
+
