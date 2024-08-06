@@ -20,9 +20,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  min-width: 100vw !important;
-  background-color: gray !important;
-  padding: 0 !important;
+    margin-bottom: 60px;
+    min-width: 100vw !important;
+    background-color: rgba(49, 54, 63);
+    padding: 0 !important;
 }
 
