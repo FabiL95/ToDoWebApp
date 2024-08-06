@@ -6,14 +6,15 @@
 }
 
 
-
+<div class="container-fluid" style="width: 90vw">
 <div class="d-flex">
     <div>
         <partial name="NavLeftPartial" model="toDoList" />
     </div>
-    <div class="flex-grow-1 ms-4" style="width: 80vw; height: 80vh; background-color: lightcoral">
-        <h4>Edit</h4>
-<div class="row">
+        <div class="flex-grow-1 ms-4" style="width: 80vw; height: 80vh; background-color: rgba(34, 40, 49); border: 2px solid rgba(118, 171, 174); border-radius: 15px; padding: 15px">
+            <h4 style="color: rgba(118, 171, 174); text-align: center; font-size: 40px; text-transform: uppercase" class="mt-3">Edit</h4>
+            <hr style="color: rgba(118, 171, 174)" />
+    <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -53,6 +54,7 @@
     </div>
 </div>
     </div>
+</div>
 </div>
 
 <div>
