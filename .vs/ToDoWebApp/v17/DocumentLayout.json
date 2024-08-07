@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\todowebapp\\views\\todoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|solutionrelative:todowebapp\\views\\todoes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|c:\\users\\ludwi\\onedrive\\desktop\\coding\\projects\\todowebapp\\todowebapp\\views\\todoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|solutionrelative:todowebapp\\views\\todoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|c:\\users\\ludwi\\onedrive\\desktop\\coding\\projects\\todowebapp\\todowebapp\\models\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|solutionrelative:todowebapp\\models\\todo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|c:\\users\\ludwi\\onedrive\\desktop\\coding\\projects\\todowebapp\\todowebapp\\views\\todoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|solutionrelative:todowebapp\\views\\todoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\todowebapp\\controllers\\todoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|solutionrelative:todowebapp\\controllers\\todoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\todowebapp\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|solutionrelative:todowebapp\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|c:\\users\\ludwi\\onedrive\\desktop\\coding\\projects\\todowebapp\\todowebapp\\views\\todoes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|solutionrelative:todowebapp\\views\\todoes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\todowebapp\\views\\todoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|solutionrelative:todowebapp\\views\\todoes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\todowebapp\\views\\todoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E73C62E1-2F4E-4A68-AC0E-DF992C92194C}|ToDoWebApp\\ToDoWebApp.csproj|solutionrelative:todowebapp\\views\\todoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,19 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ToDo.cs",
-              "DocumentMoniker": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Models\\ToDo.cs",
-              "RelativeDocumentMoniker": "ToDoWebApp\\Models\\ToDo.cs",
-              "ToolTip": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Models\\ToDo.cs",
-              "RelativeToolTip": "ToDoWebApp\\Models\\ToDo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T09:54:03.497Z",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Views\\ToDoes\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ToDoWebApp\\Views\\ToDoes\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Views\\ToDoes\\Delete.cshtml",
+              "RelativeToolTip": "ToDoWebApp\\Views\\ToDoes\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T10:17:11.577Z",
               "EditorCaption": ""
             },
             {
@@ -64,54 +56,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ToDoesController.cs",
               "DocumentMoniker": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Controllers\\ToDoesController.cs",
               "RelativeDocumentMoniker": "ToDoWebApp\\Controllers\\ToDoesController.cs",
               "ToolTip": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Controllers\\ToDoesController.cs",
               "RelativeToolTip": "ToDoWebApp\\Controllers\\ToDoesController.cs",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAmwJkAAAA2AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJkAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T08:22:52.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Views\\ToDoes\\Edit.cshtml",
               "RelativeDocumentMoniker": "ToDoWebApp\\Views\\ToDoes\\Edit.cshtml",
               "ToolTip": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Views\\ToDoes\\Edit.cshtml",
               "RelativeToolTip": "ToDoWebApp\\Views\\ToDoes\\Edit.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAABTAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAABwAAADQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-06T18:44:05.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "custom.css",
-              "DocumentMoniker": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\wwwroot\\css\\custom.css",
-              "RelativeDocumentMoniker": "ToDoWebApp\\wwwroot\\css\\custom.css",
-              "ToolTip": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\wwwroot\\css\\custom.css",
-              "RelativeToolTip": "ToDoWebApp\\wwwroot\\css\\custom.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-06T18:34:03.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Views\\ToDoes\\Create.cshtml",
-              "RelativeDocumentMoniker": "ToDoWebApp\\Views\\ToDoes\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ludwi\\OneDrive\\Desktop\\Coding\\Projects\\ToDoWebApp\\ToDoWebApp\\Views\\ToDoes\\Create.cshtml",
-              "RelativeToolTip": "ToDoWebApp\\Views\\ToDoes\\Create.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-05T19:40:06.247Z",
               "EditorCaption": ""
             }
           ]

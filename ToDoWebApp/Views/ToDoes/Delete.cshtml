@@ -4,23 +4,35 @@
     ViewData["Title"] = "Delete";
     var toDoList = ViewData["ToDoList"] as IEnumerable<ToDoWebApp.Models.ToDo>;
 }
-
-<div class="d-flex">
+<div class="container-fluid" style="width: 90vw">
+    <div class="d-flex justify-content-center align-items-center" style="background-color: rgba(34, 40, 49); padding: 1%; border-radius: 15px">
     <div>
         <partial name="NavLeftPartial" model="toDoList" />
     </div>
-    <div class="flex-grow-1 ms-4" style="width: 80vw; height: 80vh; background-color: lightcoral">
-
-    <div class="row">
-        <div class="col-3 mt-3 ms-3" style="background-color: yellow">
-                @Html.DisplayNameFor(model => model.Title)
-        </div>
-        <div class="col" style="background-color:green">
-                @Html.DisplayFor(model => model.Title)
-        </div>
-    </div>
-
-@*<div>
+        <div class="flex-grow-1 ms-4" style="width: 80vw; height: 80vh; background-color: rgba(34, 40, 49); border: 2px solid rgba(118, 171, 174); border-radius: 15px; padding: 1%">
+            <h4 style="color: rgba(118, 171, 174); text-align: center; font-size: 40px; text-transform: uppercase" class="mt-3">there is no going back after this</h4>
+            <hr style="color: rgba(118, 171, 174)" />
+            <div style="background-color: rgba(34, 40, 49); height: 80%; padding: 3%; border: 2px solid rgba(118, 171, 174); border-radius: 15px" class="d-flex justify-content-between align-items-center">
+            <div class="container">
+                <div class="form-group">
+                   <label asp-for="Title" class="control-label mb-2" style="color:white; font-size: 18px"></label>
+                        <p style="color: white; border: 1px solid rgba(118, 171, 174); background-color: rgba(255, 255, 255, 0.02); border-radius: 15px; padding: 1%">@Model.Title</p>
+                </div>
+                <div class="form-group">
+                  <label asp-for="Content" class="control-label mb-2" style="color:white; font-size: 18px"></label>
+                        <p style="color: white; height: 35vh; border: 1px solid rgba(118, 171, 174); background-color: rgba(255, 255, 255, 0.02); border-radius: 15px; padding: 1%">@Model.Content</p>
+                </div>
+                <div class="d-flex justify-content-end align-items-center">
+                        <form asp-action="Delete">
+                            <input type="hidden" asp-for="Id" />
+                            <input type="submit" value="Delete" class="btn btn-danger" />
+                            
+                        </form>
+                </div>
+            </div>
+            </div>
+        <div>
+            @*
     
     <hr />
     <div class="d-flex">
@@ -64,14 +76,14 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.IsDone)
         </dd>
-        
-    </dl>
+
+        </dl>*@
     
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
-</div>*@
-    </div>
+    
+        <div class="d-flex justify-content-center align-items-center">
+          <a class="btn btn-info mt-3" asp-action="Index">Back to List</a>
+        </div>
+</div>
+</div>
+</div>
 </div>
