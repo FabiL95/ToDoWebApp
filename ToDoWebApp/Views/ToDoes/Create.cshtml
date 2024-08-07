@@ -20,12 +20,12 @@
                 <form asp-action="Create">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="form-group  mb-3">
-                        
-                        <input asp-for="Title" class="form-control" placeholder="Title of your To-Do .." />
+
+                            <input asp-for="Title" class="form-control" placeholder="Title of your To-Do .." style="color: white; border: 1px solid rgba(118, 171, 174); background-color: rgba(255, 255, 255, 0.02)" />
                         <span asp-validation-for="Title" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <textarea asp-for="Content" class="form-control" placeholder="Content of your To-Do .." style="height: 35vh; resize: none; background-color: rgba(255, 255, 255, 0.03)"></textarea>
+                        <textarea asp-for="Content" class="form-control" placeholder="Content of your To-Do .." style="height: 35vh; color: white; resize: none; border: 1px solid rgba(118, 171, 174); background-color: rgba(255, 255, 255, 0.02)"></textarea>
                        
                         <span asp-validation-for="Content" class="text-danger"></span>
                     </div>

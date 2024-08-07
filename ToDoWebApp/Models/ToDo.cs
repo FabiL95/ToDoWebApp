@@ -10,7 +10,7 @@ namespace ToDoWebApp.Models
         public string Title { get; set; }
         public string Content { get; set; }
         public DateTime CreationDate { get; set; }
-        public bool? IsDone { get; set; }
+        public bool IsDone { get; set; }
         [Required]
         public string? UserId { get; set; }
         [ForeignKey("UserId")]
