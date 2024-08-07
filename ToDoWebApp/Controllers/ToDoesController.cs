@@ -25,7 +25,9 @@ namespace ToDoWebApp.Controllers
         // GET: ToDoes
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.ToDos.Include(t => t.User);
+            var applicationDbContext = from c in _context.ToDos
+                                       select c;
+            applicationDbContext = applicationDbContext.Where(a => a.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -52,7 +54,7 @@ namespace ToDoWebApp.Controllers
         public IActionResult Create()
         {
             // Fetch the list of ToDo items
-           var toDoList = _context.ToDos.ToList();
+           var toDoList = _context.ToDos.Where(a => a.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
            ViewData["ToDoList"] = toDoList;
             return View();
         }
@@ -72,7 +74,7 @@ namespace ToDoWebApp.Controllers
             }
 
             // Fetch the list of ToDo items again in case of validation error
-            ViewData["ToDoList"] = _context.ToDos.ToList();
+            ViewData["ToDoList"] = _context.ToDos.Where(a => a.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
             return View(toDo);
 
         }
@@ -81,7 +83,7 @@ namespace ToDoWebApp.Controllers
         public async Task<IActionResult> Edit(int? id)
         {
             // Fetch the list of ToDo items
-            var toDoList = _context.ToDos.ToList();
+            var toDoList = _context.ToDos.Where(a => a.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
             ViewData["ToDoList"] = toDoList;
 
             if (id == null)
@@ -135,7 +137,7 @@ namespace ToDoWebApp.Controllers
                 return RedirectToAction(nameof(Index));
             }
             // Fetch the list of ToDo items again in case of validation error
-            ViewData["ToDoList"] = _context.ToDos.ToList();
+            ViewData["ToDoList"] = _context.ToDos.Where(a => a.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
             return View(toDo);
         }
 
@@ -160,7 +162,7 @@ namespace ToDoWebApp.Controllers
             }
 
             // Fetch the list of ToDo items
-            var toDoList = _context.ToDos.ToList();
+            var toDoList = _context.ToDos.Where(a => a.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
             ViewData["ToDoList"] = toDoList;
             return View(toDo);
         }
