@@ -1,13 +1,14 @@
-﻿@model IEnumerable<ToDoWebApp.Models.ToDo>
+﻿
 
 @{
     ViewData["Title"] = "Index";
+    var toDoList = ViewData["ToDoList"] as IEnumerable<ToDoWebApp.Models.ToDo>;
 }
 
 <div class="container-fluid" style="width:90vw">
     <div class="d-flex justify-content-center align-items-center" style="background-color: rgba(34, 40, 49); padding: 1%; border-radius: 15px">
     <div>
-        <partial name="NavLeftPartial" />
+        <partial name="NavLeftPartial" model="toDoList" />
     </div>
         <div class="flex-grow-1 ms-4" style="width: 80vw; height: 80vh; background-color: rgba(34, 40, 49); border: 2px solid rgba(118, 171, 174); border-radius: 15px; padding: 15px">
             <h4 style="color: rgba(118, 171, 174); text-align: center; font-size: 40px; text-transform: uppercase" class="mt-3">Welcome</h4>

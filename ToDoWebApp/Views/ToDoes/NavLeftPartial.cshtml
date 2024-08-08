@@ -33,7 +33,7 @@
             }
             else
             {
-                <div>iNo active ToDo's</div>
+                <div style="color: white">- No active ToDo's</div>
             }
         
     </div>
@@ -45,7 +45,7 @@
             {
                 @foreach (var item in Model)
                 {
-                    if (item.IsDone == true)
+                    if (item.IsDone != false)
                     {
                         <div>
                         <a asp-action="Edit" asp-controller="ToDoes" asp-route-id="@item.Id" style="text-decoration: none; font-size: 14px; color: white; font-weight: 100"><span style="font-size: 12px">✔</span> @item.Title</a>
@@ -55,7 +55,7 @@
             }
             else
             {
-                <div>No finished ToDo's</div>
+                <div style="color: white">- No finished ToDo's</div>
             }
         
     </div>

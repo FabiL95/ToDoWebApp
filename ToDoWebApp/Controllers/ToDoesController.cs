@@ -23,12 +23,11 @@ namespace ToDoWebApp.Controllers
         }
 
         // GET: ToDoes
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var applicationDbContext = from c in _context.ToDos
-                                       select c;
-            applicationDbContext = applicationDbContext.Where(a => a.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
-            return View(await applicationDbContext.ToListAsync());
+            var toDoList = _context.ToDos.Where(a => a.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
+            ViewData["ToDoList"] = toDoList;
+            return View();
         }
 
         /* GET: ToDoes/Details/5
