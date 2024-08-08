@@ -5,7 +5,15 @@
 @{
     ViewData["Title"] = "Create";
     var toDoList = ViewData["ToDoList"] as IEnumerable<ToDoWebApp.Models.ToDo>;
+    
 }
+<style>
+    .form-control:focus {
+        
+        box-shadow: none !important;
+    }
+</style>
+
 <div class="container-fluid" style="width:90vw">
     <div class="d-flex justify-content-center align-items-center" style="background-color: rgba(34, 40, 49); padding: 1%; border-radius: 15px">
     <div>
