@@ -4,6 +4,7 @@ using ToDoWebApp.Models;
 
 namespace ToDoWebApp.Data
 {
+    // use our own user model
     public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
