@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ToDoWebApp.Data;
+using ToDoWebApp.Services;
 
 namespace ToDoWebApp
 {
@@ -18,6 +19,8 @@ namespace ToDoWebApp
 
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            // we are adding the new sign in manager to the container
+            builder.Services.AddScoped<CustomSignInManager>();
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
