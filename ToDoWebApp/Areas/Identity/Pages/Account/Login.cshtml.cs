@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using ToDoWebApp.Services;
+using System.ComponentModel;
 
 namespace ToDoWebApp.Areas.Identity.Pages.Account
 {
@@ -64,13 +65,18 @@ namespace ToDoWebApp.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
+            // we use the UserName as input for the login process, so we can also use the email
+            
+            [Required]
+            [Display(Name = "Username")]
+            public string UserName { get; set; }
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
-            [Required]
-            [EmailAddress]
-            public string Email { get; set; }
+            //[Required]
+            //[EmailAddress]
+            //public string Email { get; set; }
 
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -107,7 +113,8 @@ namespace ToDoWebApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            returnUrl ??= Url.Content("~/");
+            // set return url to Index page, so users see this instead of the /Home page
+            returnUrl = Url.Action("Index", "ToDoes");
 
             // 
             // ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
@@ -117,7 +124,7 @@ namespace ToDoWebApp.Areas.Identity.Pages.Account
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 // here we use the custom function from our custom signinmanager
-                var result = await _signInManager.PasswordSignInWithUserNameOrEmailAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                var result = await _signInManager.PasswordSignInWithUserNameOrEmailAsync(Input.UserName, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
